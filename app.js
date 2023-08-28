@@ -113,12 +113,11 @@ app.patch('/movies/:id', (req, res) =>{ // path to regexp
         ...movies[movieIndex],
         ...result.data
     }
-    
+     
     movies[movieIndex] = updateMovie
     return res.json(updateMovie) 
     
 })
-
 
 const PORT = process.env.PORT ?? 1234
 
